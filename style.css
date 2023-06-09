@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    color: rgb(172,177,196);
+    line-height: 1.7;
+    background-color: white;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+h1{
+    font-size: 44px;
+}
+h2{
+    font-size: 32px;
+}
+h3 {
+    font-size: 24px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+a:hover{
+    color: #d3ad7f;
+
+}
+p {
+    margin-bottom: 24px;
+}
+img{
+    width: 100%;
+}
+section{
+    padding: 90px 0 ;
+}
+
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#odd{
+    background-color: #512a10;
+    transition: all 0.4s ease;
+}
+#odd:hover{
+    background-color: #794420;
+}
+
+
+.index-para{
+    margin-bottom: 20px;
+}
+/* Home */
+#home{
+    min-height: 100vh;
+    background-image:  url("./img/pexels-toni-cuenca-585753\ \(1\).jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+#home .content{
+    max-width: 500px;
+}
+#home p{
+    color: white;
+    font-size: 24px;
+}
+.btn{
+    padding: 10px 32px;
+    color: white;
+    background-color: #d3ad7f;
+    transition: all 0.4s ease;
+}
+.btn:hover{
+    background-color: #794420;
+    color: white;
+}
+
+/* Navbar */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: all 0.4s ease;
+}
+
+.scrolled{
+    background: #512a10;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-toggler{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d3ad7f;
+    transition: all 0.4s ease;
+    display: none;
+    cursor: pointer;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+.nav-links .nav-link{
+    padding-left: 25px;
+}
+@media (max-width: 762px){
+    .navbar{
+        background-color: #512a10;
+    }
+    .menu-toggler{
+        display: flex;
+    }
+    .navbar-nav{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background-color: #794420;
+        left: -100%;
+        padding: 25px 0;
+        transition: all 0.4s ease;
+       
+    }
+
+    .active{
+        left: 0;
+    }
+
+    .nav-links{
+        flex-direction: column;
+    }
+    .nav-links .nav-link{
+            padding-bottom: 15px;
+            color: white;
+            display: block;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+        }
+}
+
+/* Home Products */
+
+.intro{
+    max-width: 500px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+.intro .intro-para{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #794420;
+}
+.intro h1{
+    color: #512a10;
+}
+.intro p{
+    color: #794420;
+}
+
+.card h1{
+    color: #512a10;
+    text-align: center;
+}
+.card p{
+    color: #794420;
+    margin-bottom: 10px;
+
+}
+
+.card  a{
+    display: block;
+    background: #d3ad7f;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: 0.5s;
+}
+.card a:hover{
+    background-color: white;
+    color: #794420;
+    font-weight: bold;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.card{
+    width: 270px;
+    height: 300px;
+    background: white;
+    border-radius: 25px;
+    border: 1px solid white;
+    margin: 10px 20px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+    transition: all 0.4s ease;
+}
+.card:hover{
+    transform: translate(0px, -16px);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.card-image{
+    height: 150px;
+    margin-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card-1{
+    background-image: url("./img/pexels-aleksandar-pasaric-2711959.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-2 {
+    background-image: url("./img/pexels-satya-deep-3158814.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.card-3 {
+    background-image: url("./img/pexels-toni-cuenca-585753\ \(1\).jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+@media (max-width: 762px){
+    .cards{
+        flex-direction: column;
+        
+    }
+}
+
+/* Contact */
+
+.intro h2{
+   margin-top: 50px;
+    color: #d3ad7f;
+    
+}
+
+#contact{
+    min-height: 100vh;
+    background: url("./img/pexels-satya-deep-3158814.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.contact-container{
+    max-width: 800px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+
+}
+.form-control{
+    padding: 10px 30px;
+    margin-bottom: 10px;
+    border:none;
+    outline: none;
+    border-radius: 25px; 
+    background: transparent;
+    border-bottom: 2px solid #d3ad7f;
+}
+::placeholder{
+    color: #d3ad7f;
+}
+/* Login */
+.now{
+    background-color: #794420;
+}
+#login{
+    min-height: 100vh;
+    background-image: url("./img/pexels-pixabay-261434.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.login-links{
+    padding-top: 20px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+/* Reviews */
+
+#reviews{
+    height: 100vh;
+    background: white;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 50px;
+    color: #794420;
+}
+.title h2{
+    color: #d3ad7f;
+    
+}
+#author{
+    color: #d3ad7f;
+}
+.review{
+    max-width: 550px;
+    height: 300px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25);
+}
+.review #info p{
+    color: white;
+    text-align: center;
+}
+.prev-btn,
+.next-btn {
+    color: #d3ad7f;
+    font-size: 1.25rem;
+    background: transparent;
+    border-color: transparent;
+    margin: 0 0.5rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+/* Products */
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+}
+/* coffee menu */
+.coffee-menu-desc h4,p {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.coffee-menu{
+   background-color: #ececec;
+    transform: translateY(100px);
+
+}
+.menu{
+     display: flex;
+    justify-content: space-around;
+}
+.coffee-menu .container h2{
+    color: black;
+    text-align: center; 
+}
+.coffee-menu-small{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+    margin: 1%;
+    padding: 2%;
+    background-color: white;
+    border-radius: 15px;
+}
+.coffee-menu-img{
+    width: 40%;
+    margin-right: 5%;
+}
+.coffee-menu-desc{
+    width: 70%;
+}
+.coffee-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.coffee-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+#coffee-btn{
+    padding: 5px 3px;
+    border-radius: 5px;
+}
